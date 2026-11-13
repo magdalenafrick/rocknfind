@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontakt | ROCK'N'FIND</title>
+
+    <!-- SCHRIFTART -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img
+                    src="images/logo.png"
+                    alt="ROCK'N'FIND Logo"
+                >
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">HOME</a></li>
+
+                <li><a href="ueber-uns.html">ÜBER UNS</a></li>
+
+                <li><a href="blog.html">BLOG</a></li>
+
+                <li><a href="bands.html">BANDS</a></li>
+
+                <li><a href="events.html">EVENTS</a></li>
+
+                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- KONTAKTSEITE -->
+
+    <main class="contact-page">
+
+        <div class="contact-container">
+
+            <!-- TITELBEREICH -->
+
+            <header class="contact-header">
+
+                <p class="contact-category">
+                    ROCK'N'FIND · GET IN TOUCH
+                </p>
+
+                <h1>KONTAKT</h1>
+
+                <p class="contact-intro">
+                    Kennst du eine Band, ein Konzert oder ein Festival,
+                    das auf ROCK'N'FIND gehört?
+                    Dann melde dich bei uns!
+                </p>
+
+            </header>
+
+
+            <!-- KONTAKTFORMULAR -->
+
+            <section class="contact-form-section">
+
+                <h2>SCHREIB UNS!</h2>
+
+                <p class="contact-description">
+                    Egal ob Bandvorschlag, Eventtipp oder eine
+                    allgemeine Frage – wir freuen uns auf deine Nachricht.
+                </p>
+
+
+                <!-- FORMULAR -->
+
+                <form class="contact-form" id="contact-form">
+
+                    <!-- NAME -->
+
+                    <div class="contact-form-group">
+
+                        <label for="contact-name">
+                            DEIN NAME
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="name"
+                            placeholder="Dein Name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- E-MAIL -->
+
+                    <div class="contact-form-group">
+
+                        <label for="contact-email">
+                            DEINE E-MAIL
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="email"
+                            placeholder="deine@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- BETREFF -->
+
+                    <div class="contact-form-group">
+
+                        <label for="contact-subject">
+                            BETREFF
+                        </label>
+
+                        <select
+                            id="contact-subject"
+                            name="subject"
+                            required
+                        >
+
+                            <option value="" disabled selected>
+                                Bitte auswählen
+                            </option>
+
+                            <option value="Band vorschlagen">
+                                Band vorschlagen
+                            </option>
+
+                            <option value="Event vorschlagen">
+                                Event vorschlagen
+                            </option>
+
+                            <option value="Allgemeine Anfrage">
+                                Allgemeine Anfrage
+                            </option>
+
+                            <option value="Sonstiges">
+                                Sonstiges
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- NACHRICHT -->
+
+                    <div class="contact-form-group">
+
+                        <label for="contact-message">
+                            DEINE NACHRICHT
+                        </label>
+
+                        <textarea
+                            id="contact-message"
+                            name="message"
+                            rows="7"
+                            placeholder="Erzähl uns mehr über deine Band, dein Event oder deine Anfrage ..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SENDEN-BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="contact-submit-button"
+                        disabled
+                    >
+                        NACHRICHT SENDEN
+                    </button>
+
+                    <p class="contact-form-notice">
+                        Das Kontaktformular wird in Kürze freigeschaltet.
+                    </p>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+            <footer class="footer">
+
+        <div class="footer-content">
+
+            <p>© 2026 ROCK'N'FIND</p>
+
+            <div class="footer-links">
+
+                <a href="datenschutz.html">
+                    Datenschutz
+                </a>
+
+                <a href="impressum.html">
+                    Impressum
+                </a>
+
+                <a href="#" class="cookie-settings">
+                    Cookie-Einstellungen
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- COOKIE-BANNER -->
+
+<div class="cookie-banner" id="cookie-banner" hidden>
+
+    <div class="cookie-content">
+
+        <h2>DEINE PRIVATSPHÄRE IST UNS WICHTIG</h2>
+
+        <p>
+            Wir verwenden notwendige Speicherfunktionen.
+            Mit deiner Einwilligung möchten wir zusätzlich
+            Google Analytics einsetzen, um unsere Website
+            zu verbessern.
+        </p>
+
+        <p>
+            Du entscheidest, ob du Statistik-Cookies
+            zulassen möchtest. Weitere Informationen
+            findest du in unserer
+            <a href="datenschutz.html">Datenschutzerklärung</a>.
+        </p>
+
+        <div class="cookie-buttons">
+
+            <button type="button" id="cookie-accept">
+                ALLE AKZEPTIEREN
+            </button>
+
+            <button type="button" id="cookie-reject">
+                ABLEHNEN
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COOKIE-SCRIPT -->
+
+<script src="cookies.js" defer></script>
+
+</body>
+</html>

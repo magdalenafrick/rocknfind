@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | ROCK'N'FIND</title>
+
+    <!-- SCHRIFTART -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img
+                    src="images/logo.png"
+                    alt="ROCK'N'FIND Logo"
+                >
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">HOME</a></li>
+
+                <li><a href="ueber-uns.html">ÜBER UNS</a></li>
+
+                <li><a href="blog.html">BLOG</a></li>
+
+                <li><a href="bands.html">BANDS</a></li>
+
+                <li><a href="events.html" class="active">EVENTS</a></li>
+
+                <li><a href="kontakt.html">KONTAKT</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- EVENTSEITE -->
+
+    <main class="events-page">
+
+        <div class="events-container">
+
+            <!-- TITELBEREICH -->
+
+            <header class="events-header">
+
+                <p class="events-category">
+                    ROCK'N'FIND · LIVE EVENTS
+                </p>
+
+                <h1>EVENTS & KONZERTE</h1>
+
+                <p class="events-intro">
+                    Entdecke Konzerte, Rocknächte und Festivals
+                    aus Liechtenstein und der Ostschweiz.
+                </p>
+
+            </header>
+
+
+            <!-- EVENTFILTER -->
+
+            <section class="events-filter">
+
+                <!-- MONAT -->
+
+                <div class="filter-group">
+
+                    <label for="event-month">MONAT</label>
+
+                    <select id="event-month">
+
+                        <option value="all">Alle Monate</option>
+                        <option value="0">Januar</option>
+                        <option value="1">Februar</option>
+                        <option value="2">März</option>
+                        <option value="3">April</option>
+                        <option value="4">Mai</option>
+                        <option value="5">Juni</option>
+                        <option value="6">Juli</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">Oktober</option>
+                        <option value="10">November</option>
+                        <option value="11">Dezember</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- JAHR -->
+
+                <div class="filter-group">
+
+                    <label for="event-year">JAHR</label>
+
+                    <select id="event-year">
+
+                        <option value="all">Alle Jahre</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SUCHE -->
+
+                <div class="filter-group">
+
+                    <label for="event-search">SUCHE</label>
+
+                    <input
+                        type="search"
+                        id="event-search"
+                        placeholder="Band oder Veranstaltungsort..."
+                    >
+
+                </div>
+
+
+                <!-- FILTER ZURÜCKSETZEN -->
+
+                <button id="filter-reset" type="button">
+                    FILTER ZURÜCKSETZEN
+                </button>
+
+            </section>
+
+
+
+            <!-- EVENTTICKETS -->
+
+            <section class="events-list" id="events-list">
+
+
+                <!-- ==================================
+                     EVENT 1 – LIVE ABRISS
+                ================================== -->
+
+                <article
+                    class="event-ticket"
+                    data-date="2026-11-21"
+                    data-search="live abriss fabrik chur"
+                >
+
+                    <!-- EVENTBILD -->
+
+                    <div class="event-ticket-image">
+
+                        <img
+                            src="images/liveabriss.png"
+                            alt="Live Abriss Konzert"
+                        >
+
+                    </div>
+
+
+                    <!-- EVENTINFORMATIONEN -->
+
+                    <div class="event-ticket-info">
+
+                        <h2>LIVE ABRISS</h2>
+
+                        <p class="event-ticket-date">
+
+                            <span>DATUM</span>
+
+                            21. November 2026
+
+                        </p>
+
+                        <p class="event-ticket-location">
+
+                            <span>LOCATION</span>
+
+                            Fabrik Chur
+
+                        </p>
+
+                        <p class="event-ticket-address">
+                            Seilerbahnweg 7, 7000 Chur
+                        </p>
+
+                    </div>
+
+
+                    <!-- UHRZEIT UND BUTTONS -->
+
+                    <div class="event-ticket-actions">
+
+                        <p class="event-ticket-time">
+                            19:30 UHR
+                        </p>
+
+
+                        <!-- TICKETLINK -->
+
+                        <a
+                            href="https://eventfrog.ch/en/p/concerts/hard-rock-heavy-metal/live-abriss-chur-7502374612480622531.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="event-ticket-button"
+                        >
+                            BUY TICKETS
+                        </a>
+
+
+                        <!-- GOOGLE MAPS -->
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Seilerbahnweg+7+7000+Chur"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="event-ticket-button event-ticket-button-outline"
+                        >
+                            MAPS
+                        </a>
+
+                    </div>
+
+
+                    <!-- TICKETABRISS -->
+
+                    <div class="event-ticket-stub">
+
+                        <span>ROCK'N'FIND</span>
+
+                        <div class="ticket-barcode"></div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ==================================
+                     EVENT 2 – PUTAN CLUB
+                ================================== -->
+
+                <article
+                    class="event-ticket"
+                    data-date="2026-11-27"
+                    data-search="putan club cuadro22 chur"
+                >
+
+                    <!-- EVENTBILD -->
+
+                    <div class="event-ticket-image">
+
+                        <img
+                            src="images/putanclub.png"
+                            alt="Putan Club Konzert"
+                        >
+
+                    </div>
+
+
+                    <!-- EVENTINFORMATIONEN -->
+
+                    <div class="event-ticket-info">
+
+                        <h2>PUTAN CLUB</h2>
+
+                        <p class="event-ticket-date">
+
+                            <span>DATUM</span>
+
+                            27. November 2026
+
+                        </p>
+
+                        <p class="event-ticket-location">
+
+                            <span>LOCATION</span>
+
+                            Cuadro22
+
+                        </p>
+
+                        <p class="event-ticket-address">
+                            Ringstrasse 22, 7000 Chur
+                        </p>
+
+                    </div>
+
+
+                    <!-- UHRZEIT UND BUTTONS -->
+
+                    <div class="event-ticket-actions">
+
+                        <p class="event-ticket-time">
+                            20:30 UHR
+                        </p>
+
+
+                        <!-- TICKETLINK -->
+
+                        <a
+                            href="https://eventfrog.ch/de/p/konzerte/punk/putan-club-transgenderfeministindustrialavantrockethnotec-chur-7507740208353268684.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="event-ticket-button"
+                        >
+                            BUY TICKETS
+                        </a>
+
+
+                        <!-- GOOGLE MAPS -->
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Ringstrasse+22+7000+Chur"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="event-ticket-button event-ticket-button-outline"
+                        >
+                            MAPS
+                        </a>
+
+                    </div>
+
+
+                    <!-- TICKETABRISS -->
+
+                    <div class="event-ticket-stub">
+
+                        <span>ROCK'N'FIND</span>
+
+                        <div class="ticket-barcode"></div>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+
+            <!-- KEINE EVENTS GEFUNDEN -->
+
+            <p
+                id="events-empty"
+                class="events-empty"
+                hidden
+            >
+                Keine Events für diesen Filter gefunden.
+            </p>
+
+        </div>
+
+    </main>
+
+
+
+    
+<!-- FOOTER -->
+
+        <footer class="footer">
+
+        <div class="footer-content">
+
+            <p>© 2026 ROCK'N'FIND</p>
+
+            <div class="footer-links">
+
+                <a href="datenschutz.html">
+                    Datenschutz
+                </a>
+
+                <a href="impressum.html">
+                    Impressum
+                </a>
+
+                <a href="#" class="cookie-settings">
+                    Cookie-Einstellungen
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- COOKIE-BANNER -->
+
+<div class="cookie-banner" id="cookie-banner" hidden>
+
+    <div class="cookie-content">
+
+        <h2>DEINE PRIVATSPHÄRE IST UNS WICHTIG</h2>
+
+        <p>
+            Wir verwenden notwendige Speicherfunktionen.
+            Mit deiner Einwilligung möchten wir zusätzlich
+            Google Analytics einsetzen, um unsere Website
+            zu verbessern.
+        </p>
+
+        <p>
+            Du entscheidest, ob du Statistik-Cookies
+            zulassen möchtest. Weitere Informationen
+            findest du in unserer
+            <a href="datenschutz.html">Datenschutzerklärung</a>.
+        </p>
+
+        <div class="cookie-buttons">
+
+            <button type="button" id="cookie-accept">
+                ALLE AKZEPTIEREN
+            </button>
+
+            <button type="button" id="cookie-reject">
+                ABLEHNEN
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COOKIE-SCRIPT -->
+
+<script src="cookies.js" defer></script>
+
+
+
+    <!-- ==================================
+         JAVASCRIPT – EVENTFILTER
+    ================================== -->
+
+    <script>
+
+        const monthFilter = document.getElementById("event-month");
+
+        const yearFilter = document.getElementById("event-year");
+
+        const searchFilter = document.getElementById("event-search");
+
+        const resetButton = document.getElementById("filter-reset");
+
+        const eventTickets = document.querySelectorAll(".event-ticket");
+
+        const emptyMessage = document.getElementById("events-empty");
+
+
+        function filterEvents() {
+
+            let visibleEvents = 0;
+
+            const selectedMonth = monthFilter.value;
+
+            const selectedYear = yearFilter.value;
+
+            const searchText = searchFilter.value.toLowerCase().trim();
+
+
+            eventTickets.forEach(ticket => {
+
+                const eventDate = ticket.dataset.date;
+
+                const eventSearch = ticket.dataset.search.toLowerCase();
+
+                const date = new Date(eventDate + "T12:00:00");
+
+
+                const monthMatches =
+                    selectedMonth === "all" ||
+                    date.getMonth() === Number(selectedMonth);
+
+
+                const yearMatches =
+                    selectedYear === "all" ||
+                    date.getFullYear() === Number(selectedYear);
+
+
+                const searchMatches =
+                    eventSearch.includes(searchText);
+
+
+                const isVisible =
+                    monthMatches && yearMatches && searchMatches;
+
+
+                ticket.hidden = !isVisible;
+
+
+                if (isVisible) {
+                    visibleEvents++;
+                }
+
+            });
+
+
+            emptyMessage.hidden = visibleEvents > 0;
+
+        }
+
+
+        monthFilter.addEventListener("change", filterEvents);
+
+        yearFilter.addEventListener("change", filterEvents);
+
+        searchFilter.addEventListener("input", filterEvents);
+
+
+        resetButton.addEventListener("click", () => {
+
+            monthFilter.value = "all";
+
+            yearFilter.value = "all";
+
+            searchFilter.value = "";
+
+            filterEvents();
+
+        });
+
+
+        filterEvents();
+
+    </script>
+
+</body>
+</html>
