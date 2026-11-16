@@ -4619,3 +4619,477 @@ a {
 
 }
 
+
+
+/* =========================================
+   ROCK'N'FIND – BANDPORTRAIT NOVOID
+========================================= */
+
+
+/* SEITENBEREICH */
+
+.novoid-page {
+    width: 100%;
+    margin: 0;
+    padding: 0px 6% 90px;
+    background: #111111;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* INHALTSBEREICH */
+
+.novoid-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 65px 0px;
+}
+
+
+/* TITELBEREICH */
+
+.novoid-header {
+    margin-bottom: 45px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 3px solid #d62828;
+}
+
+.novoid-category {
+    color: #e04444;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.novoid-header h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.novoid-intro {
+    color: #cccccc;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+
+/* GRUPPENFOTO */
+
+.novoid-group-photo {
+    width: 100%;
+    margin: 0 0 65px;
+}
+
+.novoid-group-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+/* ALLGEMEINE ABSCHNITTE */
+
+.novoid-section {
+    padding: 40px 0;
+    border-top: 1px solid #333333;
+}
+
+.novoid-section h2 {
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.novoid-section > p {
+    font-size: 22px;
+    line-height: 1.75;
+    color: #dddddd;
+    margin-bottom: 22px;
+}
+
+
+/* BANDMITGLIEDER */
+
+.novoid-members {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 45px 35px;
+    margin-top: 35px;
+}
+
+.novoid-member {
+    text-align: center;
+    min-width: 0;
+}
+
+.novoid-member img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 5px;
+    border-bottom: 4px solid #d62828;
+}
+
+.novoid-member h3 {
+    font-size: 24px;
+    margin-top: 18px;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.novoid-member p {
+    font-size: 19px;
+    color: #bbbbbb;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+
+/* BUTTONS */
+
+.novoid-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.novoid-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #75120c;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #75120c;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.novoid-button:hover {
+    background: #d62828;
+    border-color: #d62828;
+}
+
+.novoid-button-outline {
+    background: transparent;
+    border-color: #d62828;
+}
+
+.novoid-button-outline:hover {
+    background: #d62828;
+}
+
+
+/* ZURÜCK ZU DEN BANDS */
+
+.novoid-back {
+    display: inline-block;
+    color: #e04444;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+.novoid-back:hover {
+    color: #ffffff;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .novoid-page {
+        padding: 0px 6% 60px;
+    }
+
+    .novoid-container {
+        padding: 40px 0;
+    }
+
+    .novoid-header {
+        margin-bottom: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .novoid-header h1 {
+        font-size: clamp(36px, 8vw, 48px);
+    }
+
+    .novoid-intro {
+        font-size: 20px;
+    }
+
+    .novoid-group-photo {
+        margin-bottom: 40px;
+    }
+
+    .novoid-section {
+        padding: 30px 0;
+    }
+
+    .novoid-section > p {
+        font-size: 19px;
+    }
+
+    .novoid-members {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .novoid-member h3 {
+        font-size: 22px;
+    }
+
+    .novoid-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   ROCK'N'FIND – BANDPORTRAIT ANGRY RABBIT
+========================================= */
+
+
+/* SEITENBEREICH */
+
+.angryrabbit-page {
+    width: 100%;
+    margin: 0;
+    padding: 0px 6% 90px;
+    background: #111111;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* INHALTSBEREICH */
+
+.angryrabbit-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 65px 0px;
+}
+
+
+/* TITELBEREICH */
+
+.angryrabbit-header {
+    margin-bottom: 45px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 3px solid #d62828;
+}
+
+.angryrabbit-category {
+    color: #e04444;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.angryrabbit-header h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.angryrabbit-intro {
+    color: #cccccc;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+
+/* GRUPPENFOTO */
+
+.angryrabbit-group-photo {
+    width: 100%;
+    margin: 0 0 65px;
+}
+
+.angryrabbit-group-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+/* ALLGEMEINE ABSCHNITTE */
+
+.angryrabbit-section {
+    padding: 40px 0;
+    border-top: 1px solid #333333;
+}
+
+.angryrabbit-section h2 {
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.angryrabbit-section > p {
+    font-size: 22px;
+    line-height: 1.75;
+    color: #dddddd;
+    margin-bottom: 22px;
+}
+
+
+/* BANDMITGLIEDER */
+
+.angryrabbit-members {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 45px 35px;
+    margin-top: 35px;
+}
+
+.angryrabbit-member {
+    text-align: center;
+    min-width: 0;
+}
+
+.angryrabbit-member img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 5px;
+    border-bottom: 4px solid #d62828;
+}
+
+.angryrabbit-member h3 {
+    font-size: 24px;
+    margin-top: 18px;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.angryrabbit-member p {
+    font-size: 19px;
+    color: #bbbbbb;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+
+/* BUTTONS */
+
+.angryrabbit-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.angryrabbit-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #75120c;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #75120c;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.angryrabbit-button:hover {
+    background: #d62828;
+    border-color: #d62828;
+}
+
+.angryrabbit-button-outline {
+    background: transparent;
+    border-color: #d62828;
+}
+
+.angryrabbit-button-outline:hover {
+    background: #d62828;
+}
+
+
+/* ZURÜCK ZU DEN BANDS */
+
+.angryrabbit-back {
+    display: inline-block;
+    color: #e04444;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+.angryrabbit-back:hover {
+    color: #ffffff;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .angryrabbit-page {
+        padding: 0px 6% 60px;
+    }
+
+    .angryrabbit-container {
+        padding: 40px 0;
+    }
+
+    .angryrabbit-header {
+        margin-bottom: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .angryrabbit-header h1 {
+        font-size: clamp(36px, 8vw, 48px);
+    }
+
+    .angryrabbit-intro {
+        font-size: 20px;
+    }
+
+    .angryrabbit-group-photo {
+        margin-bottom: 40px;
+    }
+
+    .angryrabbit-section {
+        padding: 30px 0;
+    }
+
+    .angryrabbit-section > p {
+        font-size: 19px;
+    }
+
+    .angryrabbit-members {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .angryrabbit-member h3 {
+        font-size: 22px;
+    }
+
+    .angryrabbit-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
