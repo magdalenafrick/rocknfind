@@ -5093,3 +5093,512 @@ a {
     }
 
 }
+
+
+
+/* =========================================
+   ROCK'N'FIND – FAQ-SEITE
+========================================= */
+
+
+/* SEITENBEREICH MIT HINTERGRUNDBILD */
+
+.faq-page {
+    width: 100%;
+    margin: 0;
+    padding: 0px 6% 90px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.60)
+        ),
+        url("images/hintergrund3.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* INHALTSBEREICH */
+
+.faq-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 65px 0px;
+}
+
+
+/* TITELBEREICH */
+
+.faq-header {
+    margin-bottom: 45px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 3px solid #d62828;
+}
+
+.faq-category {
+    color: #e04444;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.faq-header h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.faq-intro {
+    color: #cccccc;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+
+/* FAQ-ABSCHNITTE */
+
+.faq-section {
+    padding: 40px 0;
+    border-top: 1px solid #333333;
+}
+
+.faq-section h2 {
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+
+/* AKKORDEON-LISTE */
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* EINZELNE FRAGE */
+
+.faq-item {
+    background: #1c1c1c;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* FRAGETITEL */
+
+.faq-item summary {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    list-style: none;
+    padding: 24px 65px 24px 25px;
+    font-size: 23px;
+    line-height: 1.5;
+    color: #ffffff;
+    transition: background 0.2s;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary:hover {
+    background: #252525;
+}
+
+
+/* PFEIL */
+
+.faq-item summary::after {
+    content: "";
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid #e04444;
+    border-bottom: 3px solid #e04444;
+    transform: translateY(-70%) rotate(45deg);
+    transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+    transform: translateY(-30%) rotate(225deg);
+}
+
+
+/* GEÖFFNETE FRAGE */
+
+.faq-item[open] {
+    border-color: #75120c;
+}
+
+.faq-item[open] summary {
+    background: #252525;
+    border-bottom: 1px solid #333333;
+}
+
+
+/* ANTWORT */
+
+.faq-answer {
+    padding: 25px;
+}
+
+.faq-answer p {
+    font-size: 21px;
+    line-height: 1.75;
+    color: #dddddd;
+}
+
+.faq-answer a {
+    color: #e04444;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.faq-answer a:hover {
+    color: #ffffff;
+}
+
+
+/* ABSCHLUSSBEREICH */
+
+.faq-contact {
+    padding: 45px 0;
+    border-top: 1px solid #333333;
+}
+
+.faq-contact h2 {
+    font-size: clamp(28px, 3vw, 38px);
+    margin-bottom: 20px;
+}
+
+.faq-contact p {
+    font-size: 22px;
+    line-height: 1.75;
+    color: #dddddd;
+    margin-bottom: 25px;
+}
+
+
+/* KONTAKT-BUTTON */
+
+.faq-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #75120c;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #75120c;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.faq-button:hover {
+    background: #d62828;
+    border-color: #d62828;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .faq-page {
+        padding: 0px 6% 60px;
+    }
+
+    .faq-container {
+        padding: 40px 0;
+    }
+
+    .faq-header {
+        margin-bottom: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .faq-header h1 {
+        font-size: clamp(36px, 8vw, 48px);
+    }
+
+    .faq-intro {
+        font-size: 20px;
+    }
+
+    .faq-section {
+        padding: 30px 0;
+    }
+
+    .faq-section h2 {
+        font-size: 28px;
+    }
+
+    .faq-item summary {
+        font-size: 19px;
+        padding: 20px 55px 20px 18px;
+    }
+
+    .faq-item summary::after {
+        right: 22px;
+    }
+
+    .faq-answer {
+        padding: 20px 18px;
+    }
+
+    .faq-answer p {
+        font-size: 19px;
+    }
+
+    .faq-contact p {
+        font-size: 19px;
+    }
+
+}
+
+
+
+/* EVENT OHNE TICKETKAUF */
+
+.event-no-ticket {
+    background: #252525;
+    border: 1px solid #555555;
+    color: #ffffff;
+    cursor: default;
+    text-align: center;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+
+
+/* =========================================
+   ROCK'N'FIND – BLOGARTIKEL
+========================================= */
+
+
+/* SEITENBEREICH */
+
+.article-page {
+    width: 100%;
+    margin: 0;
+    padding: 0px 6% 90px;
+    background: #111111;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* INHALTSBEREICH */
+
+.article-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 65px 0px;
+}
+
+
+/* TITELBEREICH */
+
+.article-header {
+    margin-bottom: 45px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 3px solid #d62828;
+}
+
+.article-category {
+    color: #e04444;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.article-header h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.article-intro {
+    color: #cccccc;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+
+/* ARTIKELBILD */
+
+.article-image {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.article-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+/* ARTIKELABSCHNITTE */
+
+.article-section {
+    padding: 40px 0;
+    border-top: 1px solid #333333;
+}
+
+.article-section-category {
+    color: #e04444;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.article-section h2 {
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.article-section p {
+    color: #dddddd;
+    font-size: 22px;
+    line-height: 1.75;
+}
+
+
+/* ABSCHLUSSBEREICH */
+
+.article-outro {
+    padding: 45px 0;
+    border-top: 1px solid #333333;
+}
+
+.article-outro h2 {
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.article-outro p {
+    color: #dddddd;
+    font-size: 22px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+}
+
+
+/* EVENTS-BUTTON */
+
+.article-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #75120c;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #75120c;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.article-button:hover {
+    background: #d62828;
+    border-color: #d62828;
+}
+
+
+/* ZURÜCK ZUM BLOG */
+
+.article-back {
+    display: inline-block;
+    margin-top: 45px;
+    color: #e04444;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.article-back:hover {
+    color: #ffffff;
+}
+
+
+/* MOBILE ANSICHT */
+
+@media (max-width: 700px) {
+
+    .article-page {
+        padding: 0px 6% 60px;
+    }
+
+    .article-container {
+        padding: 40px 0;
+    }
+
+    .article-header {
+        margin-bottom: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .article-header h1 {
+        font-size: clamp(36px, 8vw, 48px);
+    }
+
+    .article-intro {
+        font-size: 20px;
+    }
+
+    .article-section {
+        padding: 30px 0;
+    }
+
+    .article-section h2 {
+        font-size: 28px;
+    }
+
+    .article-section p,
+    .article-outro p {
+        font-size: 19px;
+    }
+
+}
+
+
+
+/* =========================================
+   ROCKMOMENTE – SONG-LINK
+========================================= */
+
+.rockmomente-song {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.rockmomente-song a {
+    display: inline-block;
+    color: #e04444;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.rockmomente-song a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}

@@ -50,7 +50,13 @@
 
                 <li><a href="events.html">EVENTS</a></li>
 
-                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li>
+                    <a href="kontakt.html" class="active">
+                        KONTAKT
+                    </a>
+                </li>
 
             </ul>
 
@@ -95,9 +101,14 @@
                 </p>
 
 
-                <!-- FORMULAR -->
+                <!-- FORMULAR MIT FORMSPREE -->
 
-                <form class="contact-form" id="contact-form">
+                <form
+                    class="contact-form"
+                    id="contact-form"
+                    action="https://formspree.io/f/meaggorj"
+                    method="POST"
+                >
 
                     <!-- NAME -->
 
@@ -202,13 +213,13 @@
                     <button
                         type="submit"
                         class="contact-submit-button"
-                        disabled
                     >
                         NACHRICHT SENDEN
                     </button>
 
                     <p class="contact-form-notice">
-                        Das Kontaktformular wird in Kürze freigeschaltet.
+                        Wir freuen uns auf deine Nachricht
+                        und melden uns so schnell wie möglich bei dir!
                     </p>
 
                 </form>
@@ -220,7 +231,9 @@
     </main>
 
 
-            <footer class="footer">
+    <!-- FOOTER -->
+
+    <footer class="footer">
 
         <div class="footer-content">
 
@@ -246,47 +259,51 @@
 
     </footer>
 
+
     <!-- COOKIE-BANNER -->
 
-<div class="cookie-banner" id="cookie-banner" hidden>
+    <div class="cookie-banner" id="cookie-banner" hidden>
 
-    <div class="cookie-content">
+        <div class="cookie-content">
 
-        <h2>DEINE PRIVATSPHÄRE IST UNS WICHTIG</h2>
+            <h2>DEINE PRIVATSPHÄRE IST UNS WICHTIG</h2>
 
-        <p>
-            Wir verwenden notwendige Speicherfunktionen.
-            Mit deiner Einwilligung möchten wir zusätzlich
-            Google Analytics einsetzen, um unsere Website
-            zu verbessern.
-        </p>
+            <p>
+                Wir verwenden notwendige Speicherfunktionen.
+                Mit deiner Einwilligung möchten wir zusätzlich
+                Google Analytics einsetzen, um unsere Website
+                zu verbessern.
+            </p>
 
-        <p>
-            Du entscheidest, ob du Statistik-Cookies
-            zulassen möchtest. Weitere Informationen
-            findest du in unserer
-            <a href="datenschutz.html">Datenschutzerklärung</a>.
-        </p>
+            <p>
+                Du entscheidest, ob du Statistik-Cookies
+                zulassen möchtest. Weitere Informationen
+                findest du in unserer
+                <a href="datenschutz.html">
+                    Datenschutzerklärung
+                </a>.
+            </p>
 
-        <div class="cookie-buttons">
+            <div class="cookie-buttons">
 
-            <button type="button" id="cookie-accept">
-                ALLE AKZEPTIEREN
-            </button>
+                <button type="button" id="cookie-accept">
+                    ALLE AKZEPTIEREN
+                </button>
 
-            <button type="button" id="cookie-reject">
-                ABLEHNEN
-            </button>
+                <button type="button" id="cookie-reject">
+                    ABLEHNEN
+                </button>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
 
-<!-- COOKIE-SCRIPT -->
+    <!-- COOKIE-SCRIPT -->
 
-<script src="cookies.js" defer></script>
+    <script src="cookies.js" defer></script>
 
 </body>
 </html>
