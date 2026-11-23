@@ -5602,3 +5602,317 @@ a {
     color: #ffffff;
     text-decoration: underline;
 }
+
+
+
+/* =========================================
+   ROCK'N'FIND – BANDPORTRAIT MIRKWOOD SPIDERS
+========================================= */
+
+
+/* SEITENBEREICH */
+
+.mirkwood-main {
+    width: 100%;
+    margin: 0;
+    padding: 0px 6% 90px;
+    background: #111111;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* INHALTSBEREICH */
+
+.mirkwood-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 65px 0px;
+    box-sizing: border-box;
+}
+
+
+/* TITELBEREICH */
+
+.mirkwood-header {
+    margin-bottom: 45px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 3px solid #d62828;
+}
+
+.mirkwood-category {
+    color: #e04444;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.mirkwood-header h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.mirkwood-intro {
+    color: #cccccc;
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* GRUPPENFOTO */
+
+.mirkwood-group-photo {
+    width: 100%;
+    margin: 0 0 65px;
+}
+
+.mirkwood-group-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+/* ALLGEMEINE ABSCHNITTE */
+
+.mirkwood-section {
+    padding: 40px 0;
+    border-top: 1px solid #333333;
+}
+
+.mirkwood-section h2 {
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.25;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.mirkwood-section > p {
+    font-size: 22px;
+    line-height: 1.75;
+    color: #dddddd;
+    margin-bottom: 22px;
+}
+
+
+/* BANDLOGO */
+
+.mirkwood-logo-area {
+    padding: 55px 25px;
+    margin: 20px 0 50px;
+    text-align: center;
+    background: #191919;
+    border-top: 2px solid #d62828;
+    border-bottom: 2px solid #d62828;
+    border-radius: 4px;
+}
+
+.mirkwood-logo-label {
+    color: #e04444;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0 0 25px;
+}
+
+.mirkwood-band-logo {
+    display: block;
+    width: 100%;
+    max-width: 570px;
+    max-height: 230px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+/* BANDMITGLIEDER OHNE FOTOS */
+
+.mirkwood-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.mirkwood-member {
+    position: relative;
+    padding: 32px 28px;
+    background: #1b1b1b;
+    border-left: 4px solid #d62828;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.mirkwood-member:hover {
+    background: #252525;
+}
+
+.mirkwood-member-number {
+    display: block;
+    color: #e04444;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.mirkwood-member h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px;
+    line-height: 1.3;
+}
+
+.mirkwood-member p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #bbbbbb;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* LINKS IM TEXT */
+
+.mirkwood-section a:not(.mirkwood-button) {
+    color: #e04444;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.mirkwood-section a:not(.mirkwood-button):hover {
+    color: #ffffff;
+}
+
+
+/* BUTTONS */
+
+.mirkwood-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.mirkwood-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #75120c;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #75120c;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.mirkwood-button:hover {
+    background: #d62828;
+    border-color: #d62828;
+}
+
+
+/* EVENTS – TRANSPARENT MIT ROTEM RAND */
+
+.mirkwood-button-secondary {
+    background: transparent;
+    color: #ffffff;
+    border-color: #d62828;
+}
+
+.mirkwood-button-secondary:hover {
+    background: #d62828;
+    border-color: #d62828;
+}
+
+
+/* ZURÜCK ZUR BANDÜBERSICHT */
+
+.mirkwood-back {
+    display: inline-block;
+    margin-top: 35px;
+    color: #e04444;
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mirkwood-back:hover {
+    color: #ffffff;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .mirkwood-main {
+        padding: 0px 6% 60px;
+    }
+
+    .mirkwood-container {
+        padding: 40px 0;
+    }
+
+    .mirkwood-header {
+        margin-bottom: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .mirkwood-header h1 {
+        font-size: clamp(36px, 8vw, 48px);
+    }
+
+    .mirkwood-intro {
+        font-size: 20px;
+    }
+
+    .mirkwood-group-photo {
+        margin-bottom: 40px;
+    }
+
+    .mirkwood-section {
+        padding: 30px 0;
+    }
+
+    .mirkwood-section > p {
+        font-size: 19px;
+    }
+
+    .mirkwood-logo-area {
+        padding: 35px 15px;
+        margin: 10px 0 35px;
+    }
+
+    .mirkwood-logo-label {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .mirkwood-members {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .mirkwood-member {
+        padding: 25px 22px;
+    }
+
+    .mirkwood-member h3 {
+        font-size: 22px;
+    }
+
+    .mirkwood-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

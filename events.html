@@ -3,8 +3,6 @@
 <html lang="de">
 
 <head>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,11 +11,7 @@
     <!-- SCHRIFTART -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -25,12 +19,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- VERGANGENE EVENTS SICHER AUSBLENDEN -->
+    <style>
+        .event-ticket[hidden] {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
-
     <header>
         <nav class="navbar">
 
@@ -53,20 +52,18 @@
 
 
     <!-- EVENTSEITE -->
-
     <main class="events-page">
 
         <div class="events-container">
 
             <!-- TITELBEREICH -->
-
             <header class="events-header">
 
                 <p class="events-category">
                     ROCK'N'FIND · LIVE EVENTS
                 </p>
 
-                <h1>EVENTS & KONZERTE</h1>
+                <h1>EVENTS &amp; KONZERTE</h1>
 
                 <p class="events-intro">
                     Entdecke Konzerte, Rocknächte und Festivals
@@ -77,13 +74,10 @@
 
 
             <!-- EVENTFILTER -->
-
             <section class="events-filter">
 
                 <!-- MONAT -->
-
                 <div class="filter-group">
-
                     <label for="event-month">MONAT</label>
 
                     <select id="event-month">
@@ -101,14 +95,10 @@
                         <option value="10">November</option>
                         <option value="11">Dezember</option>
                     </select>
-
                 </div>
 
-
                 <!-- JAHR -->
-
                 <div class="filter-group">
-
                     <label for="event-year">JAHR</label>
 
                     <select id="event-year">
@@ -116,27 +106,19 @@
                         <option value="2026">2026</option>
                         <option value="2027">2027</option>
                     </select>
-
                 </div>
 
-
                 <!-- SUCHE -->
-
                 <div class="filter-group">
-
                     <label for="event-search">SUCHE</label>
 
                     <input
                         type="search"
                         id="event-search"
-                        placeholder="Band oder Veranstaltungsort..."
-                    >
-
+                        placeholder="Band oder Veranstaltungsort...">
                 </div>
 
-
-                <!-- FILTER ZURÜCKSETZEN -->
-
+                <!-- ZURÜCKSETZEN -->
                 <button id="filter-reset" type="button">
                     FILTER ZURÜCKSETZEN
                 </button>
@@ -145,25 +127,19 @@
 
 
             <!-- ALLE EVENTS -->
-
             <section class="events-list" id="events-list">
 
 
-                <!-- ==================================
-                     EVENT 1 – LIVE ABRISS
-                ================================== -->
-
+                <!-- EVENT 1 – LIVE ABRISS -->
                 <article
                     class="event-ticket"
                     data-date="2026-11-21"
-                    data-search="live abriss fabrik chur"
-                >
+                    data-search="live abriss fabrik chur">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/liveabriss.png"
-                            alt="Live Abriss Konzert"
-                        >
+                            alt="Live Abriss Konzert">
                     </div>
 
                     <div class="event-ticket-info">
@@ -196,8 +172,7 @@
                             href="https://eventfrog.ch/en/p/concerts/hard-rock-heavy-metal/live-abriss-chur-7502374612480622531.html"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -205,8 +180,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Seilerbahnweg+7+7000+Chur"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -220,21 +194,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 2 – ROTZ IM RHINTL 3.0
-                ================================== -->
-
+                <!-- EVENT 2 – ROTZ IM RHINTL -->
                 <article
                     class="event-ticket"
                     data-date="2026-11-21"
-                    data-search="rotz im rhintl 3.0 stoffel3 widnau nofnog punk"
-                >
+                    data-search="rotz im rhintl 3.0 stoffel3 widnau nofnog punk">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/rotz-im-rhintl.jpg"
-                            alt="Rotz im Rhintl 3.0 Konzertplakat"
-                        >
+                            alt="Rotz im Rhintl 3.0 Konzertplakat">
                     </div>
 
                     <div class="event-ticket-info">
@@ -267,8 +236,7 @@
                             href="https://www.jnw-sdm.ch/2026/10/rotz-im-rhintl-3-0/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -276,8 +244,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Stoffel3+R%C3%BCtistrasse+23+9443+Widnau"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -291,21 +258,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 3 – ERSTE JAM NIGHT
-                ================================== -->
-
+                <!-- EVENT 3 – ERSTE JAM NIGHT -->
                 <article
                     class="event-ticket"
                     data-date="2026-11-28"
-                    data-search="erste jam night verein musikszene ethno cafe bar schaanwald liechtenstein"
-                >
+                    data-search="erste jam night verein musikszene ethno cafe bar schaanwald liechtenstein">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/ethno cafe.jpg"
-                            alt="Erste Jam Night im Ethno Café"
-                        >
+                            alt="Erste Jam Night im Ethno Café">
                     </div>
 
                     <div class="event-ticket-info">
@@ -338,8 +300,7 @@
                             href="https://www.vaterland.li/liechtenstein/kultur/musiker-sollen-zusammenkommen-art-774301"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -347,8 +308,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Ethno+Cafe+Bar+Vorarlbergerstrasse+123+9486+Schaanwald"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -362,21 +322,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 4 – LIVE ROCK BIERHALLE
-                ================================== -->
-
+                <!-- EVENT 4 – LIVE ROCK BIERHALLE -->
                 <article
                     class="event-ticket"
                     data-date="2026-12-19"
-                    data-search="live rock bierhalle balgach rheintaler pub linde"
-                >
+                    data-search="live rock bierhalle balgach rheintaler pub linde">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/bierhalle-balgach.jpg"
-                            alt="Live Rock in der Bierhalle Balgach"
-                        >
+                            alt="Live Rock in der Bierhalle Balgach">
                     </div>
 
                     <div class="event-ticket-info">
@@ -409,8 +364,7 @@
                             href="https://www.bierhalle-balgach.ch/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -418,8 +372,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Bierhalle+Hauptstrasse+42+9436+Balgach"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -433,22 +386,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 5 – DIAL HARD ROCKI DOCKI
-                     KEINE UHRZEIT
-                ================================== -->
-
+                <!-- EVENT 5 – DIAL HARD ROCKI DOCKI -->
                 <article
                     class="event-ticket"
                     data-date="2027-03-06"
-                    data-search="dial hard rocki docki flums"
-                >
+                    data-search="dial hard rocki docki flums">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/rockidocki.jpg"
-                            alt="DIAL HARD – Rocki Docki Flums"
-                        >
+                            alt="DIAL HARD – Rocki Docki Flums">
                     </div>
 
                     <div class="event-ticket-info">
@@ -477,8 +424,7 @@
                             href="https://rockidocki.ch/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -486,8 +432,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Rocki+Docki+Flums+Schweiz"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -501,22 +446,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 6 – DIAL HARD BAR AND BAND
-                     KEINE UHRZEIT
-                ================================== -->
-
+                <!-- EVENT 6 – DIAL HARD BAR AND BAND -->
                 <article
                     class="event-ticket"
                     data-date="2027-03-13"
-                    data-search="dial hard bar and band skubar skybar buchs"
-                >
+                    data-search="dial hard bar and band skubar skybar buchs">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/skybar.jpg"
-                            alt="DIAL HARD – Bar and Band in Buchs"
-                        >
+                            alt="DIAL HARD – Bar and Band in Buchs">
                     </div>
 
                     <div class="event-ticket-info">
@@ -545,8 +484,7 @@
                             href="https://skybar.bar/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -554,8 +492,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Skubar+Buchs+Schweiz"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -569,22 +506,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 7 – DIAL HARD ÖLFLECK
-                     UHRZEIT 20:00 UHR
-                ================================== -->
-
+                <!-- EVENT 7 – DIAL HARD ÖLFLECK -->
                 <article
                     class="event-ticket"
                     data-date="2027-03-20"
-                    data-search="dial hard oelfleck ölfleck event bar frauenfeld"
-                >
+                    data-search="dial hard oelfleck ölfleck event bar frauenfeld">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/oelfleck.jpg"
-                            alt="DIAL HARD – Ölfleck Frauenfeld"
-                        >
+                            alt="DIAL HARD – Ölfleck Frauenfeld">
                     </div>
 
                     <div class="event-ticket-info">
@@ -617,8 +548,7 @@
                             href="https://www.oelfleck.ch/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -626,8 +556,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Oelfleck+Event+Bar+Frauenfeld"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -641,22 +570,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 8 – DIAL HARD HAPPY PUB
-                     KEINE UHRZEIT
-                ================================== -->
-
+                <!-- EVENT 8 – DIAL HARD HAPPY PUB -->
                 <article
                     class="event-ticket"
                     data-date="2027-05-29"
-                    data-search="dial hard happy pub wangs"
-                >
+                    data-search="dial hard happy pub wangs">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/happy pub.jpeg"
-                            alt="DIAL HARD – Happy Pub Wangs"
-                        >
+                            alt="DIAL HARD – Happy Pub Wangs">
                     </div>
 
                     <div class="event-ticket-info">
@@ -685,8 +608,7 @@
                             href="https://www.facebook.com/HappyPubWangs/?locale=de_DE"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -694,8 +616,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Happy+Pub+Wangs+Schweiz"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -709,22 +630,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 9 – DIAL HARD OPEN AIR
-                     KEINE UHRZEIT
-                ================================== -->
-
+                <!-- EVENT 9 – DIAL HARD OPEN AIR BERNHARDZELL -->
                 <article
                     class="event-ticket"
                     data-date="2027-07-16"
-                    data-search="dial hard open air bernhardzell"
-                >
+                    data-search="dial hard open air bernhardzell">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/openair_bernhardzell.jpg"
-                            alt="DIAL HARD – Open Air Bernhardzell"
-                        >
+                            alt="DIAL HARD – Open Air Bernhardzell">
                     </div>
 
                     <div class="event-ticket-info">
@@ -753,8 +668,7 @@
                             href="https://shop.openairbernhardzell.ch/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -762,8 +676,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Dicken+891+9304+Waldkirch+Schweiz"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -777,22 +690,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 10 – DIAL HARD HOFGUT DOMÄNE
-                     KEINE UHRZEIT
-                ================================== -->
-
+                <!-- EVENT 10 – DIAL HARD HOFGUT DOMÄNE -->
                 <article
                     class="event-ticket"
                     data-date="2027-08-21"
-                    data-search="dial hard hofgut domäne domaene hechingen deutschland"
-                >
+                    data-search="dial hard hofgut domäne domaene hechingen deutschland">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/hofgut-domaene.jpeg"
-                            alt="DIAL HARD – Hofgut Domäne Hechingen"
-                        >
+                            alt="DIAL HARD – Hofgut Domäne Hechingen">
                     </div>
 
                     <div class="event-ticket-info">
@@ -821,8 +728,7 @@
                             href="https://www.hofgut-domaene.de/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -830,8 +736,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=Hofgut+Domaene+Hechingen+Deutschland"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -845,21 +750,16 @@
                 </article>
 
 
-                <!-- ==================================
-                     EVENT 11 – ROCK NIGHT 2027
-                ================================== -->
-
+                <!-- EVENT 11 – ROCK NIGHT 2027 -->
                 <article
                     class="event-ticket"
                     data-date="2027-10-29"
-                    data-search="rock night 2027 rockhouse sal schaan saal am lindaplatz"
-                >
+                    data-search="rock night 2027 rockhouse sal schaan saal am lindaplatz">
 
                     <div class="event-ticket-image">
                         <img
                             src="images/eventbilder/rock-house.jpeg"
-                            alt="Rock Night 2027 – SAL Schaan"
-                        >
+                            alt="Rock Night 2027 – SAL Schaan">
                     </div>
 
                     <div class="event-ticket-info">
@@ -877,7 +777,7 @@
                         </p>
 
                         <p class="event-ticket-address">
-                            Landstrasse 19, 9494 Schaan, Liechtenstein 
+                            Landstrasse 19, 9494 Schaan, Liechtenstein
                         </p>
 
                     </div>
@@ -892,8 +792,7 @@
                             href="https://www.rockhouse.li/auftritte.html"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button"
-                        >
+                            class="event-ticket-button">
                             MEHR ERFAHREN
                         </a>
 
@@ -901,8 +800,7 @@
                             href="https://www.google.com/maps/search/?api=1&amp;query=SAL+Saal+am+Lindaplatz+Landstrasse+19+9494+Schaan"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="event-ticket-button event-ticket-button-outline"
-                        >
+                            class="event-ticket-button event-ticket-button-outline">
                             MAPS
                         </a>
 
@@ -915,17 +813,14 @@
 
                 </article>
 
-
             </section>
 
 
             <!-- KEINE EVENTS GEFUNDEN -->
-
             <p
                 id="events-empty"
                 class="events-empty"
-                hidden
-            >
+                hidden>
                 Keine Events für diesen Filter gefunden.
             </p>
 
@@ -935,7 +830,6 @@
 
 
     <!-- FOOTER -->
-
     <footer class="footer">
 
         <div class="footer-content">
@@ -964,7 +858,6 @@
 
 
     <!-- COOKIE-BANNER -->
-
     <div class="cookie-banner" id="cookie-banner" hidden>
 
         <div class="cookie-content">
@@ -1005,26 +898,22 @@
 
 
     <!-- COOKIE-SCRIPT -->
-
     <script src="cookies.js" defer></script>
 
 
     <!-- ==================================
          JAVASCRIPT – EVENTFILTER
+         MIT AUTOMATISCHEM AUSBLENDEN
     ================================== -->
 
     <script>
 
         const monthFilter = document.getElementById("event-month");
-
         const yearFilter = document.getElementById("event-year");
-
         const searchFilter = document.getElementById("event-search");
-
         const resetButton = document.getElementById("filter-reset");
 
         const eventTickets = document.querySelectorAll(".event-ticket");
-
         const emptyMessage = document.getElementById("events-empty");
 
 
@@ -1033,41 +922,51 @@
             let visibleEvents = 0;
 
             const selectedMonth = monthFilter.value;
-
             const selectedYear = yearFilter.value;
-
             const searchText = searchFilter.value.toLowerCase().trim();
+
+            // HEUTIGES DATUM ERMITTELN
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
 
 
             eventTickets.forEach(ticket => {
 
                 const eventDate = ticket.dataset.date;
-
                 const eventSearch = ticket.dataset.search.toLowerCase();
 
-                const date = new Date(eventDate + "T12:00:00");
+                const date = new Date(eventDate + "T00:00:00");
+
+                // VERGANGENE EVENTS ERKENNEN
+                const isUpcoming = date >= today;
 
 
+                // MONATSFILTER
                 const monthMatches =
                     selectedMonth === "all" ||
                     date.getMonth() === Number(selectedMonth);
 
 
+                // JAHRESFILTER
                 const yearMatches =
                     selectedYear === "all" ||
                     date.getFullYear() === Number(selectedYear);
 
 
+                // SUCHFILTER
                 const searchMatches =
                     eventSearch.includes(searchText);
 
 
+                // NUR AKTUELLE UND ZUKÜNFTIGE EVENTS ANZEIGEN
                 const isVisible =
-                    monthMatches && yearMatches && searchMatches;
+                    isUpcoming &&
+                    monthMatches &&
+                    yearMatches &&
+                    searchMatches;
 
 
                 ticket.hidden = !isVisible;
-
 
                 if (isVisible) {
                     visibleEvents++;
@@ -1076,24 +975,23 @@
             });
 
 
+            // MELDUNG BEI KEINEN ERGEBNISSEN
             emptyMessage.hidden = visibleEvents > 0;
 
         }
 
 
+        // FILTER AKTUALISIEREN
         monthFilter.addEventListener("change", filterEvents);
-
         yearFilter.addEventListener("change", filterEvents);
-
         searchFilter.addEventListener("input", filterEvents);
 
 
+        // FILTER ZURÜCKSETZEN
         resetButton.addEventListener("click", () => {
 
             monthFilter.value = "all";
-
             yearFilter.value = "all";
-
             searchFilter.value = "";
 
             filterEvents();
@@ -1101,7 +999,12 @@
         });
 
 
+        // BEIM LADEN DER SEITE PRÜFEN
         filterEvents();
+
+
+        // AUCH BEI LÄNGER GEÖFFNETER SEITE PRÜFEN
+        setInterval(filterEvents, 60000);
 
     </script>
 
